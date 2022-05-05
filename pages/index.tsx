@@ -6,21 +6,14 @@ import styles from "../styles/Home.module.css";
 
 type LinkCardProps = {
   name: string;
-  link: string;
   description: string;
 };
-function LinkCard({ link, name, description }: LinkCardProps) {
+function LinkCard({ name, description }: LinkCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.cardName}>
         <h2 className={styles.h2}>
-          <Link
-            href={`/${name.toLocaleLowerCase()}?direct=${encodeURIComponent(
-              link
-            )}`}
-          >
-            {name}
-          </Link>
+          <Link href={`/${name.toLocaleLowerCase()}`}>{name}</Link>
         </h2>
         <button
           className={styles.cardBtn}
@@ -54,22 +47,18 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <LinkCard
             name="BotExtended"
-            link="https://github.com/nearhuscarl/botextended"
             description="A SFD script that adds a ton of bots and weapons"
           />
           <LinkCard
             name="BotExtended"
-            link="https://github.com/nearhuscarl/botextended"
             description="A SFD script that adds a ton of bots and weapons"
           />
           <LinkCard
             name="BotExtended"
-            link="https://github.com/nearhuscarl/botextended"
             description="A SFD script that adds a ton of bots and weapons"
           />
           <LinkCard
             name="BotExtended"
-            link="https://github.com/nearhuscarl/botextended"
             description="A SFD script that adds a ton of bots and weapons"
           />
         </div>
