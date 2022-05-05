@@ -13,7 +13,8 @@ function LinkCard({ name, description }: LinkCardProps) {
     <div className={styles.card}>
       <div className={styles.cardName}>
         <h2 className={styles.h2}>
-          <Link href={`/${name.toLocaleLowerCase()}`}>{name}</Link>
+          {/* note: next/Link doesn't redirect, idk why */}
+          <a href={`/${name.toLocaleLowerCase()}`}>{name}</a>
         </h2>
         <button
           className={styles.cardBtn}
