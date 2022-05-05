@@ -41,8 +41,9 @@
 
 .title {
   margin: 0;
+  margin-bottom: 50px;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -54,15 +55,6 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -92,9 +84,32 @@
   border-color: #0070f3;
 }
 
+.cardName {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.cardBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.cardBtn:hover {
+  background-color: #0070f3;
+}
+
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+}
+
+.h2 a {
+  color: black;
+}
+.h2:hover a {
+  color: #0070f3;
 }
 
 .card p {
