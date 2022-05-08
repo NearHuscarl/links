@@ -47,8 +47,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>A collection of links to my stuff</h1>
 
         <div className={styles.grid}>
-          {directs.map((d) => (
-            <LinkCard name={d.name} description={d.desc} />
+          {directs.map(({ name, desc }) => (
+            <LinkCard key={name} name={name} description={desc} />
           ))}
         </div>
       </main>
