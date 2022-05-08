@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
+
+const directs = require("./pages/direct.json");
+
 const nextConfig = {
   reactStrictMode: true,
   async redirects() {
-    return [
-      {
-        source: "/botextended",
-        destination: "https://github.com/nearhuscarl/botextended",
-        permanent: true,
-        basePath: false,
-      },
-    ];
+    return directs.map((des) => ({
+      source: "/" + des.name,
+      destination: des.link,
+      permanent: true,
+      basePath: false,
+    }));
   },
 };
 

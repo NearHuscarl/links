@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import directs from "./direct.json";
 
 type LinkCardProps = {
   name: string;
@@ -46,22 +47,9 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>A collection of links to my stuff</h1>
 
         <div className={styles.grid}>
-          <LinkCard
-            name="BotExtended"
-            description="A SFD script that adds a ton of bots and weapons"
-          />
-          <LinkCard
-            name="BotExtended"
-            description="A SFD script that adds a ton of bots and weapons"
-          />
-          <LinkCard
-            name="BotExtended"
-            description="A SFD script that adds a ton of bots and weapons"
-          />
-          <LinkCard
-            name="BotExtended"
-            description="A SFD script that adds a ton of bots and weapons"
-          />
+          {directs.map((d) => (
+            <LinkCard name={d.name} description={d.desc} />
+          ))}
         </div>
       </main>
 

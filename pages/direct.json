@@ -1,0 +1,22 @@
+[
+  {
+    "name": "be",
+    "link": "https://github.com/nearhuscarl/botextended",
+    "desc": "A SFD script that adds a ton of bots and weapons"
+  },
+  {
+    "name": "be-bot",
+    "link": "https://www.youtube.com/watch?v=BuafVqIVGp0&list=PLNgAmHQnqv_mDr3G3yN4ahVNeBA-578UD",
+    "desc": "BotExtended - Bot demos"
+  },
+  {
+    "name": "be-wpn",
+    "link": "https://www.youtube.com/watch?v=8id_mqD-9EI&list=PLNgAmHQnqv_neDehA2uAENMws0WBDx18k",
+    "desc": "BotExtended - Custom weapon demos"
+  },
+  {
+    "name": "be-powerup",
+    "link": "https://www.youtube.com/watch?v=T2NpStBZopU&list=PLNgAmHQnqv_m_OphnuEWAXsZjp1mvrEul",
+    "desc": "BotExtended - Powerup demos"
+  }
+]
